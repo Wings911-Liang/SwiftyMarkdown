@@ -151,8 +151,8 @@ If that is not set, then the system default will be used.
 /// A class that takes a [Markdown](https://daringfireball.net/projects/markdown/) string or file and returns an NSAttributedString with the applied styles. Supports Dynamic Type.
 @objc open class SwiftyMarkdown: NSObject {
 	
-	static public var frontMatterRules = [
-		FrontMatterRule(openTag: "---", closeTag: "---", keyValueSeparator: ":")
+    static public var frontMatterRules: [FrontMatterRule] = [
+//		FrontMatterRule(openTag: "---", closeTag: "---", keyValueSeparator: ":")
 	]
 	
 	static public var lineRules = [
